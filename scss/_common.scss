@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    font-family: "Circe";
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+section {
+    position: relative;
+}
+
+.flex {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.center {
+    text-align: center;
+}
+
+.j-c-between {
+    justify-content: space-between;
+}
+
+.a-i-center {
+    align-items: center;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.white {
+    background: #fff;
+}
+
+a {
+    cursor: pointer;
+}
+
+input {
+    outline: none;
+    font-size: 18px;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}

@@ -1,0 +1,474 @@
+@import "_container";
+@import "_colors";
+@import "_common";
+@import "_buttons";
+
+@font-face {
+    font-family: "Circe";
+    src: url("../assets/fonts/Circe-Light.eot");
+    src: local("../assets/fonts/Circe Light"), local("Circe-Light"),
+        url("../assets/fonts/Circe-Light.eot?#iefix") format("embedded-opentype"),
+        url("../assets/fonts/Circe-Light.woff2") format("woff2"), url("../assets/fonts/Circe-Light.woff") format("woff"),
+        url("../assets/fonts/Circe-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Circe";
+    src: url("../assets/fonts/Circe-ExtraBold.eot");
+    src: local("../assets/fonts/Circe Extra Bold"), local("../assets/fonts/Circe-ExtraBold"),
+        url("../assets/fonts/Circe-ExtraBold.eot?#iefix") format("embedded-opentype"),
+        url("../assets/fonts/Circe-ExtraBold.woff2") format("woff2"),
+        url("../assets/fonts/Circe-ExtraBold.woff") format("woff"),
+        url("../assets/fonts/Circe-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Circe";
+    src: url("../assets/fonts/Circe-Thin.eot");
+    src: local("../assets/fonts/Circe Thin"), local("../assets/fonts/Circe-Thin"),
+        url("../assets/fonts/Circe-Thin.eot?#iefix") format("embedded-opentype"),
+        url("../assets/fonts/Circe-Thin.woff2") format("woff2"), url("../assets/fonts/Circe-Thin.woff") format("woff"),
+        url("../assets/fonts/Circe-Thin.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Circe";
+    src: url("../assets/fonts/Circe-Regular.eot");
+    src: local("../assets/fonts/Circe"), local("../assets/fonts/Circe-Regular"),
+        url("../assets/fonts/Circe-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../assets/fonts/Circe-Regular.woff2") format("woff2"),
+        url("../assets/fonts/Circe-Regular.woff") format("woff"),
+        url("../assets/fonts/Circe-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Circe";
+    src: url("../assets/fonts/Circe-Bold.eot");
+    src: local("../assets/fonts/Circe Bold"), local("../assets/fonts/Circe-Bold"),
+        url("../assets/fonts/Circe-Bold.eot?#iefix") format("embedded-opentype"),
+        url("../assets/fonts/Circe-Bold.woff2") format("woff2"), url("../assets/fonts/Circe-Bold.woff") format("woff"),
+        url("../assets/fonts/Circe-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+.tel {
+    width: 29px;
+    height: 29px;
+}
+
+.title-section {
+    font-size: 48px;
+    color: $main;
+    padding: 50px 0 0;
+    margin: 0 0 25px;
+}
+
+.badge {
+    width: 44px;
+    height: 16px;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 12px !important;
+    margin-top: -5px;
+    font-weight: 700;
+}
+.slider-points {
+    margin: 27px auto;
+
+    ul {
+        width: 100%;
+        justify-content: center;
+        padding: 0;
+        li {
+            list-style-type: none;
+            width: 9px;
+            height: 9px;
+            background: rgba(38, 48, 87, 0.2);
+            margin: 0 5px;
+            border-radius: 50%;
+        }
+        .active {
+            background: $main-light;
+        }
+    }
+}
+
+header {
+    padding: 10px 0;
+    font-size: 18px;
+    color: $main;
+    .logo {
+        max-height: 95px;
+    }
+    nav a {
+        padding: 0 18px;
+        font-weight: 400;
+    }
+    .contacts {
+        p {
+            margin: 0;
+            margin-left: 3px;
+        }
+        p:nth-child(1) {
+            font-weight: 700;
+            line-height: 20px;
+        }
+        p:nth-child(2) {
+            opacity: 0.5;
+            letter-spacing: 2px;
+            margin-top: -7px;
+            font-size: 17px;
+        }
+    }
+    .btn-dark {
+        width: 148px;
+        height: 34px;
+    }
+    .btn-light {
+        width: 171px;
+        height: 34px;
+    }
+}
+
+.section1 {
+    height: 530px;
+    background: linear-gradient(136.49deg, #263057 25.34%, #1d1444 89.06%);
+    display: flex;
+
+    .btn-light {
+        width: 222px;
+        height: 47px;
+        font-size: 20px;
+    }
+    .white {
+        height: 450px;
+        border-radius: 15px;
+        margin: 43px 0 0;
+        position: relative;
+    }
+    .title {
+        color: $main;
+        padding: 139px 62px;
+        h1 {
+            margin: 0;
+        }
+        h1:nth-child(1) {
+            font-size: 62px;
+            margin-bottom: 0;
+        }
+        h1:nth-child(2) {
+            font-size: 44px;
+            margin-top: -20px;
+        }
+        button {
+            margin-top: 27px;
+            box-shadow: 10px 10px 28px rgba(105, 132, 240, 0.2);
+        }
+    }
+
+    .img-woman {
+        position: absolute;
+        right: 15px;
+        top: 0;
+    }
+}
+
+.section2 {
+    background: $back;
+
+    .white {
+        border-radius: 15px;
+        padding: 30px 30px 25px;
+    }
+
+    .tariffs ul {
+        color: $main;
+        width: 80%;
+        margin: 0 auto;
+        li {
+            font-size: 20px;
+            list-style-type: none;
+            &.active {
+                font-weight: 700;
+                border-bottom: 2px solid $main-light;
+            }
+        }
+    }
+    .badge {
+        background: $main-light;
+    }
+
+    .slider {
+        margin: 50px 0 0;
+        color: $main;
+        a {
+            font-size: 18px;
+        }
+        p {
+            margin: 0;
+            font-size: 18px;
+        }
+        .speedText {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: -1px;
+            margin: 0;
+        }
+        .active {
+            background: linear-gradient(180deg, #273158 0%, #0c244d 100%);
+            box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.45);
+            color: #fff;
+            padding: 25px 15px;
+            border-radius: 30px;
+        }
+        .popup {
+            width: 14px;
+            height: 14px;
+        }
+        .hr {
+            width: 100%;
+            height: 1px;
+            background: rgba(38, 48, 87, 0.2);
+            margin: 10px 0;
+        }
+        span {
+            font-weight: 700;
+            font-size: 30px;
+        }
+        button {
+            width: 191px;
+            height: 35px;
+            margin-top: 16px;
+        }
+        .badge {
+            background: #fff;
+            font-size: 12px;
+            color: $main;
+            margin-bottom: 10px;
+        }
+        .speed {
+            width: 22px;
+            height: 22px;
+            margin-right: 10px;
+        }
+    }
+
+    .btn-all {
+        width: 264px;
+        height: 45px;
+        font-size: 18px;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+.section3,
+.section4,
+.section5 {
+    background: $back;
+    padding: 20px 0 0;
+    .form {
+        h1 {
+            font-size: 38px;
+            margin: 0 0 15px;
+        }
+        border-radius: 15px;
+        background: $main;
+        color: #fff;
+        padding: 25px 60px 25px 80px;
+    }
+    .inputs {
+        input {
+            width: 100%;
+            border-radius: 5px;
+            height: 46px;
+            margin: 0 20px 0 0;
+            font-size: 18px;
+            padding: 0 25px;
+            border: none;
+        }
+        input::placeholder {
+            color: $main;
+        }
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    label {
+        margin-top: -3px;
+    }
+
+    label:before {
+        content: " ";
+        color: #000;
+        display: inline-block;
+        margin-right: 15px;
+        text-align: center;
+        width: 15px;
+        height: 15px;
+        background: $main;
+        border: 1px solid #fff;
+        vertical-align: middle;
+        cursor: pointer;
+        border-radius: 1px;
+    }
+
+    input:checked + label:before {
+        content: "✓";
+        font-size: 9px;
+        color: #fff;
+    }
+
+    button {
+        min-width: 223px;
+        height: 46px;
+        font-size: 18px;
+    }
+}
+
+.section4 {
+    .form {
+        padding: 35px 60px 50px 50px;
+    }
+    .location {
+        height: 50px;
+        width: 50px;
+        margin-right: 20px;
+    }
+}
+
+.section5 {
+    .form {
+        min-height: 150px;
+    }
+}
+
+.section3 {
+    padding: 50px 0 0;
+}
+
+.section6 {
+    h1 {
+        margin-bottom: 37px;
+    }
+    img {
+        border-radius: 10px;
+    }
+    .text {
+        margin-left: 45px;
+        font-size: 18px;
+        margin-top: 30px;
+        font-weight: 400;
+    }
+    button {
+        width: 250px;
+        height: 48px;
+        font-size: 18px;
+        margin: 48px auto 64px;
+        display: block;
+    }
+}
+
+.section7 {
+    background: $back;
+    padding: 50px;
+    color: $main;
+
+    .item {
+        background: #fff;
+        border-radius: 15px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p {
+            margin: 0;
+            font-size: 16px;
+        }
+        .date {
+            font-weight: 700;
+            margin: 25px 0 20px;
+            font-size: 18px;
+        }
+
+        img {
+            width: 318px;
+        }
+
+        a {
+            color: $main-light;
+            margin-top: 25px;
+            img {
+                width: 11px;
+            }
+        }
+    }
+
+    .item:nth-child(2) {
+        margin: 0 20px;
+    }
+}
+.section7,
+.section8 {
+    button {
+        width: 250px;
+        height: 48px;
+        font-size: 18px;
+        display: block;
+        margin: 40px auto;
+    }
+}
+
+.section8 {
+    img {
+        width: 60px;
+        height: 60px;
+        margin-right: 17px;
+    }
+    .back {
+        background: $back;
+        border-radius: 15px;
+        padding: 45px 40px;
+    }
+    .item {
+        min-width: 300px;
+        max-width: 350px;
+    }
+}
+
+.section9 {
+    padding: 20px 0 0;
+    background: $back;
+
+    .item {
+        background: #fff;
+        border-radius: 15px;
+        width: 243px;
+        height: 100px;
+        justify-content: center;
+    }
+    .transform {
+        transform: rotate(180deg);
+    }
+    .slider-points {
+        margin-top: 35px;
+        padding-bottom: 73px;
+    }
+}
