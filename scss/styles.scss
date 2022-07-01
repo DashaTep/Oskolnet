@@ -468,7 +468,72 @@ header {
         transform: rotate(180deg);
     }
     .slider-points {
-        margin-top: 35px;
+        margin: 35px 0 0;
         padding-bottom: 73px;
+    }
+}
+
+footer {
+    background: $main;
+    color: #fff;
+    font-size: 20px;
+    padding: 100px 0 55px 0;
+    .btn-light {
+        width: 206px;
+        height: 39px;
+        margin-right: 20px;
+        font-size: 18px;
+        margin-bottom: 24px;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        width: 60%;
+        columns: 3;
+        li {
+            list-style-type: none;
+            cursor: pointer;
+        }
+    }
+    .w-100 {
+        width: 100%;
+    }
+    span {
+        color: #fff;
+        opacity: 0.5;
+        font-size: 14px;
+        line-height: 140%;
+        margin-left: 2px;
+    }
+    .tel {
+        margin-right: 10px;
+        width: 15px;
+        height: 25px;
+    }
+    .icons {
+        margin-top: 14px;
+        img {
+            margin-right: 13px;
+            cursor: pointer;
+        }
+    }
+    .contacts {
+        margin: 0;
+    }
+
+    .info {
+        width: 100%;
+        font-size: 14px;
+        color: #fff;
+        opacity: 0.5;
+        font-weight: 300;
+        margin-top: 90px;
+        p:nth-child(2) {
+            width: 65%;
+        }
+        img {
+            margin-right: 50px;
+            margin-top: -15px;
+        }
     }
 }
