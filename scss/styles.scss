@@ -357,9 +357,13 @@ header {
         width: 50px;
         margin-right: 20px;
     }
+    .location-tel {
+        display: none;
+    }
 }
 
 .section5 {
+    padding: 20px 0 50px;
     .form {
         min-height: 150px;
     }
@@ -542,6 +546,10 @@ footer {
             margin-right: 50px;
             margin-top: -15px;
         }
+    }
+    .contacts-tel,
+    .icons-tel {
+        display: none;
     }
 }
 

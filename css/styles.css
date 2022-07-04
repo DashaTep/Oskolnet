@@ -452,7 +452,13 @@ header .btn-light {
   width: 50px;
   margin-right: 20px;
 }
+.section4 .location-tel {
+  display: none;
+}
 
+.section5 {
+  padding: 20px 0 50px;
+}
 .section5 .form {
   min-height: 150px;
 }
@@ -626,6 +632,10 @@ footer .info p:nth-child(2) {
 footer .info img {
   margin-right: 50px;
   margin-top: -15px;
+}
+footer .contacts-tel,
+footer .icons-tel {
+  display: none;
 }
 
 @media (max-width: 576px) {
