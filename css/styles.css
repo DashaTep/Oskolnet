@@ -19,11 +19,16 @@
 @media (max-width: 767px) {
   .container {
     max-width: none;
+    width: auto;
   }
 }
 body {
   margin: 0;
   font-family: "Circe";
+}
+
+main {
+  overflow: hidden;
 }
 
 *::before,
@@ -74,6 +79,7 @@ a {
 input {
   outline: none;
   font-size: 18px;
+  box-sizing: border-box;
 }
 
 .mb-0 {
@@ -188,6 +194,9 @@ header {
   font-size: 18px;
   color: #263057;
 }
+header .header-mobile {
+  display: none;
+}
 header .logo {
   max-height: 95px;
 }
@@ -222,6 +231,9 @@ header .btn-light {
   height: 530px;
   background: linear-gradient(136.49deg, #263057 25.34%, #1d1444 89.06%);
   display: flex;
+}
+.section1 .img-woman-tel {
+  display: none;
 }
 .section1 .btn-light {
   width: 222px;
@@ -474,6 +486,9 @@ header .btn-light {
   padding: 50px;
   color: #263057;
 }
+.section7 .slider-points {
+  display: none;
+}
 .section7 .item {
   background: #fff;
   border-radius: 15px;
@@ -611,4 +626,217 @@ footer .info p:nth-child(2) {
 footer .info img {
   margin-right: 50px;
   margin-top: -15px;
+}
+
+@media (max-width: 576px) {
+  .container {
+    overflow: hidden;
+  }
+
+  .header-full {
+    display: none;
+  }
+
+  .header-mobile {
+    display: flex !important;
+  }
+  .header-mobile .logo {
+    width: 85px;
+  }
+
+  .section1 {
+    height: auto !important;
+  }
+  .section1 .slider-points {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+  }
+  .section1 .slider-points .active {
+    width: 27px;
+    border-radius: 10px;
+  }
+  .section1 .white {
+    width: 90vw;
+    position: relative;
+    height: 550px;
+    margin: 20px 0 20px;
+  }
+  .section1 .img-woman {
+    display: none;
+  }
+  .section1 .img-woman-tel {
+    display: block;
+    position: absolute;
+    right: 15px;
+    left: -10px;
+    top: 28%;
+    width: 350px;
+  }
+  .section1 .title {
+    padding: 20px 0;
+    text-align: center;
+  }
+  .section1 .title h1 {
+    font-size: 40px !important;
+    margin-top: 10px;
+  }
+  .section1 .title h1:nth-child(2) {
+    font-size: 20px !important;
+    margin-top: 0;
+  }
+  .section1 .title button {
+    margin-top: 0;
+  }
+
+  .title-section {
+    font-size: 25px;
+  }
+
+  .menu {
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+
+  .form {
+    padding: 25px !important;
+  }
+  .form h1 {
+    font-size: 20px !important;
+  }
+
+  .inputs {
+    flex-direction: column;
+  }
+  .inputs input {
+    margin: 15px auto !important;
+    padding: 0 0 0 10px !important;
+  }
+
+  .section2 .tariffs ul {
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+  .section2 .tariffs ul li {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  .section2 .slider {
+    margin-top: 15px;
+  }
+  .section2 .slider .item {
+    margin-right: 20px;
+    border: 1px solid #263057;
+    border-radius: 15px;
+    padding: 30px 10px;
+  }
+  .section2 .white {
+    margin-left: -15px;
+    width: calc(100vw - 60px);
+  }
+
+  .section4 .inputs {
+    position: relative;
+  }
+  .section4 .inputs .loc {
+    padding: 0 0 0 38px !important;
+  }
+  .section4 .location {
+    display: none;
+  }
+  .section4 .location-tel {
+    position: absolute;
+    left: 10px;
+    top: 23px;
+  }
+
+  .section5 .form {
+    min-height: auto;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .section7 {
+    padding: 0;
+  }
+  .section7 .slider-points {
+    display: flex;
+  }
+  .section7 button {
+    margin: 0 auto 40px;
+  }
+
+  .section6 .row {
+    flex-direction: column;
+  }
+  .section6 .text {
+    margin-left: 0;
+  }
+  .section6 button {
+    margin: 20px auto 48px;
+  }
+
+  .section8 .back {
+    flex-direction: column;
+  }
+
+  .section9 .item {
+    display: none;
+  }
+  .section9 .active {
+    display: flex;
+  }
+
+  footer {
+    padding-top: 24px;
+  }
+  footer .row {
+    flex-direction: column-reverse;
+  }
+  footer ul {
+    margin-top: 20px;
+    width: 100%;
+    -moz-columns: 1;
+         columns: 1;
+    text-align: center;
+  }
+  footer ul li {
+    margin-top: 15px;
+    font-weight: 400;
+  }
+  footer .buttons button {
+    width: 100%;
+  }
+  footer .contacts,
+footer .icons {
+    display: none;
+  }
+  footer .icons-tel,
+footer .contacts-tel {
+    display: flex;
+    justify-content: center;
+  }
+  footer .icons-tel img,
+footer .contacts-tel img {
+    margin-right: 13px;
+  }
+  footer .info {
+    flex-direction: column-reverse;
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+  }
+  footer .info img {
+    width: 120px;
+    margin: 0 auto;
+  }
+  footer .info p:nth-child(2) {
+    width: 100%;
+  }
 }

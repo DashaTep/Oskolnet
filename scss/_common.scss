@@ -2,6 +2,9 @@ body {
     margin: 0;
     font-family: "Circe";
 }
+main {
+    overflow: hidden;
+}
 
 *::before,
 *::after {
@@ -51,6 +54,7 @@ a {
 input {
     outline: none;
     font-size: 18px;
+    box-sizing: border-box;
 }
 
 .mb-0 {
